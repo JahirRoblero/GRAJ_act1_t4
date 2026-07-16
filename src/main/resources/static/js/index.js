@@ -1,7 +1,7 @@
-const API_URL = "http://67.207.87.232:8081/api";
+const API_URL = "/api";
 
 async function obtenerEdad() {
-  const respuesta = await fetch(`${API_URL}/edad`);
+  const respuesta = await fetch(`${API_URL}/edadjahir`);
 
   if (!respuesta.ok) {
     throw new Error("No se pudo obtener la edad");
@@ -49,22 +49,17 @@ async function mostrarEdad() {
 }
 
 async function mostrarProyecto() {
-  const elementoProyecto =
-    document.getElementById("proyecto");
+  const elementoProyecto = document.getElementById("proyecto");
 
-  const proyectoObtenido =
-    await obtenerProyecto();
+  const proyectoObtenido = await obtenerProyecto();
 
-  elementoProyecto.textContent =
-    "Proyecto: " + proyectoObtenido;
+  elementoProyecto.textContent = "Proyecto: " + proyectoObtenido;
 }
 
 async function mostrarMaterias() {
-  const contenedorMaterias =
-    document.getElementById("materias");
+  const contenedorMaterias = document.getElementById("materias");
 
-  const materiasObtenidas =
-    await obtenerMaterias();
+  const materiasObtenidas = await obtenerMaterias();
 
   contenedorMaterias.innerHTML = `
     <p>Materias:</p>
@@ -77,7 +72,7 @@ async function mostrarMaterias() {
   `;
 }
 
-async function mostrarNombre(){
+async function mostrarNombre() {
   const elementoNombre = document.getElementById("nombre");
 
   const nombreObtenido = await obtenerNombre();

@@ -1,6 +1,8 @@
 package com.actividad1.primerospasos.controller;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -30,5 +32,15 @@ public class ProyectoRestControlador {
             "Conmutacion y enrrutamiento de redes",
             "ingles"
         );
+    }
+
+    @GetMapping("/manzana")
+    public Map<String,String> obtenerDatosManzana(){
+        Map<String, String> entidades = new HashMap<>();
+        entidades.put("Precio", "10 pesos");
+        entidades.put("Disponibilidad", "mucha");
+        entidades.put("categoria", "fruta");
+        entidades.put("Es rica", "Si");
+        return entidades;
     }
 }
