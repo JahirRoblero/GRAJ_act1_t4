@@ -24,6 +24,7 @@ Proyecto creado con Spring Boot y Gradle. Contiene controladores y endpoints que
 - `/api/nombrecompleto` - Muestra mi nombre completo.
 - `/api/edadjahir` - Muestra mi edad.
 - `/api/mismaterias` - Muestra una lista de materias.
+- `/api/manzana` - Devuelve un json con las caracteristicas de una manzana.
 
 ## Ejecutar localmente
 
