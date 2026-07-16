@@ -22,7 +22,7 @@ Proyecto creado con Spring Boot y Gradle. Contiene controladores y endpoints que
 
 - `/api/proyecto` - Muestra el nombre del proyecto.
 - `/api/nombrecompleto` - Muestra mi nombre completo.
-- `/api/edad` - Muestra mi edad.
+- `/api/edadjahir` - Muestra mi edad.
 - `/api/mismaterias` - Muestra una lista de materias.
 
 ## Ejecutar localmente
